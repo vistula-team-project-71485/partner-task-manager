@@ -1,3 +1,0 @@
-This is a practice pull request from my second account.
-I am learning how to create and merge pull requests.
-This is not the required team contribution.
