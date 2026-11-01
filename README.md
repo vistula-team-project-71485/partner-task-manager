@@ -1,76 +1,28 @@
 # Task Manager
 
-Practical Assignment 1 — Team Project IT.
-
-## Student
-
+Team Project IT - Assignment 1
 Student ID: 73497
-GitHub username: vistula-team-project-73497
 
-## Application
-
+My app:
 https://vistula-team-project-73497.github.io/vistula-task-manager/
 
-## Description
+This is a simple app for managing tasks. You can add, edit and
+delete tasks, and mark them as completed or incomplete.
+Tasks stay saved after refreshing the page.
 
-A simple task manager built with HTML, CSS and JavaScript.
-Tasks are stored in a Supabase PostgreSQL database.
-The application uses the Supabase REST API through JavaScript fetch().
+I used HTML, CSS, JavaScript and Supabase.
+The website is hosted on GitHub Pages.
+JavaScript uses the Supabase REST API to work with the tasks table.
 
-Users can:
-- View all tasks.
-- Add a task with a title and description.
-- Edit a task.
-- Mark a task as completed or incomplete.
-- Delete a task.
+To use the app, open the link above. No installation or login is needed.
+Please use only test data because the task list is public.
 
-Changes remain saved after refreshing the page.
+I tested adding, editing, completing and deleting tasks.
+I also checked that changes stay saved after refreshing.
 
-## Technologies
+## Team work
 
-- HTML, CSS and JavaScript
-- Supabase PostgreSQL and REST API
-- Git and GitHub
-- GitHub Pages
+Not finished yet.
 
-## How to use
-
-Open the application link in a browser.
-No installation or login is required.
-
-Enter a title and an optional description, then click Add task.
-Use Edit, Mark complete / Mark incomplete and Delete to manage tasks.
-
-This is a public demonstration application. Use test data only.
-Visitors share the same task list.
-
-## Database
-
-Table: tasks
-
-- id: bigint, automatically generated primary key
-- title: text, required
-- description: text, optional
-- completed: boolean, default false
-
-Row Level Security is enabled with policies allowing public
-read, insert, update and delete operations on the tasks table.
-
-config.json contains the project URL, public publishable key
-and table name. No secret keys or database passwords are included.
-
-## Testing
-
-Manually tested on the deployed GitHub Pages website:
-- Adding a task.
-- Keeping the task after refreshing.
-- Editing the title and description.
-- Changing the completion status.
-- Deleting the task and checking after refreshing.
-
-## Team collaboration
-
-Pending — this section will be updated after both Pull Requests are merged.
-
-- My merged Pull Request in my partner's repository: pending.
-- My partner's merged Pull Request in this repository: pending.
+My pull request in my partner's repository: pending
+My partner's pull request in my repository: pending
