@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px 16px;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #222;
+}
+
+main {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+h1 {
+  margin-top: 0;
+  color: #2563eb;
+}
+
+h2 {
+  margin-top: 28px;
+  font-size: 20px;
+}
+
+form > div {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #9ca3af;
+  border-radius: 5px;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  margin: 4px 6px 4px 0;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2563eb;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+#cancel-edit {
+  background-color: #4b5563;
+}
+
+#status-message {
+  min-height: 24px;
+  overflow-wrap: anywhere;
+}
+
+.task-item {
+  margin-bottom: 14px;
+  padding: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.task-title {
+  margin: 0 0 8px;
+  overflow-wrap: anywhere;
+}
+
+.task-description {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.task-status {
+  font-weight: bold;
+}
+
+.task-item.completed {
+  background-color: #f0fdf4;
+}
+
+.task-item.completed .task-title {
+  text-decoration: line-through;
+}
+
+.delete-task {
+  background-color: #dc2626;
+}
+
+.toggle-task {
+  background-color: #15803d;
+}
+
+a {
+  color: #2563eb;
+}
