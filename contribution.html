@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Contribution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        button {
+            padding: 12px 24px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        #contributor-student-id {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Team Contribution</h1>
+
+        <p>Click the button to display the contributor's student ID.</p>
+
+        <button id="load-contributor">Show Contributor</button>
+
+        <div id="contributor-student-id"></div>
+
+        <a href="index.html">Back to Task Manager</a>
+    </div>
+
+    <script>
+        document.getElementById("load-contributor").addEventListener("click", async () => {
+            const output = document.getElementById("contributor-student-id");
+
+            try {
+                const response = await fetch("./contribution.json");
+
+                if (!response.ok) {
+                    throw new Error("Could not load contributor information.");
+                }
+
+                const data = await response.json();
+                output.textContent = "Student ID: " + data.contributorStudentId;
+            } catch (error) {
+                output.textContent = error.message;
+            }
+        });
+    </script>
+</body>
+</html>
